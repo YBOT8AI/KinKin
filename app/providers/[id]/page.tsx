@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import { createClient } from '@supabase/supabase-js';
 
 export default function ProviderProfilePage() {
   const params = useParams();
@@ -11,7 +11,10 @@ export default function ProviderProfilePage() {
   const [provider, setProvider] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [bookingModal, setBookingModal] = useState(false);
-  const supabase = createClientComponentClient();
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
 
   useEffect(() => {
     async function fetchProvider() {
