@@ -1,0 +1,19 @@
+
+> kinkin@0.1.0 dev
+> next dev
+
+⚠ Port 3000 is in use by an unknown process, using available port 3001 instead.
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://76.13.185.213:3001
+- Environments: .env.local
+✓ Ready in 443ms
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          209484
+- Dir:          /root/.openclaw/workspace/kinkin
+- Log:          .next/dev/logs/next-development.log
+
+Run kill 209484 to stop it.
+[?25h
