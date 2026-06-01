@@ -2,12 +2,10 @@
 > kinkin@0.1.0 dev
 > next dev
 
-/root/.openclaw/workspace/kinkin/node_modules/next/dist/server/config.js:787
-            throw new Error(`Configuring Next.js via '${(0, _path.basename)(nonJsPath)}' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.`);
-                  ^
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+  - Environments: .env.local
 
-Error: Configuring Next.js via 'next.config.ts' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.
-    at loadConfig (/root/.openclaw/workspace/kinkin/node_modules/next/dist/server/config.js:787:19)
-    at async Module.nextDev (/root/.openclaw/workspace/kinkin/node_modules/next/dist/cli/next-dev.js:175:14)
-
-Node.js v22.22.2
+ ✓ Starting...
+ ✓ Ready in 1829ms
+[?25h
